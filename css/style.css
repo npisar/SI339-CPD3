@@ -163,7 +163,7 @@ button{
     border-radius: 0.5em;
 }
 
-.nav-home-button{
+.nav-home-link{
     border: none;
     background: var(--surface-color);
     color: var(--primary-color);
@@ -201,8 +201,7 @@ button{
     justify-self: end;
 }
 
-
-.athletic-link-button {
+.athleticnet-link {
     display: inline-block;
     text-align: center;
     margin-top: 10px;
@@ -216,23 +215,17 @@ button{
     width: fit-content;
 }
 
-.athletic-link-button:hover {
+.athleticnet-link:hover {
     background-color: var(--primary-color);
     color: var(--surface-color);
 }
 
-/* .dark-mode .athletic-link-button:hover {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-} */
-
 /* smooth transition */
-button, .nav-home-button, .color-options-menu{
-    transition: 0.25s color ease;
-    transition: 0.25s background-color ease;
+button, .nav-home-link, .color-options-menu{
+    transition: 0.25s color ease, 0.25s background-color ease;
 }
 
-button:hover, .nav-home-button:hover, .color-options-menu:hover{
+button:hover, .nav-home-link:hover, .color-options-menu:hover{
     text-decoration: none;
     background-color: var(--primary-color);
     color: var(--surface-color);
@@ -255,14 +248,12 @@ th, td, li {
     color: var(--primary-color);
 }
 
-
 tr:nth-of-type(odd) {
     background-color: var(--09);
 }
 tr:nth-child(1) {
     background-color: var(--15);
 }
-
 
 /* add dividers */
 tr:not(last-of-type) {
@@ -286,8 +277,7 @@ details summary {
     color: white;
     text-align: center;
     
-    transition: 0.25s color ease;
-    transition: 0.25s background-color ease;
+    transition: 0.25s color ease, 0.25s background-color ease;
 }
 
 details summary:hover {
@@ -333,17 +323,7 @@ details summary::-webkit-details-marker {
 /* ############################################
 ###############################################
 ############################################ */
-/* header items */
-header {
-    position: sticky;
-    top: 0;
-    background-color: var(--secondary-color);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+/* Header items */
 
 .color-options-section {
     display: grid;
@@ -375,7 +355,7 @@ header {
     padding-left: 0.5em;
 }
 
-.nav-home-button .fa-house {
+.nav-home-link .fa-house {
     padding-right: 0.5em;
 }
 
@@ -454,7 +434,7 @@ header {
     grid-template-rows: 1fr;
 }
 
-header .nav-home-button {
+header .nav-home-link {
     grid-column-start: 1;
     justify-self: center;
 }
@@ -498,14 +478,12 @@ main .season-notes {
         animation: details-show 0ms linear;
     }
     
-    button, .nav-home-button, .color-options-menu{
-        transition: 0s color linear;
-        transition: 0s background-color linear;
+    button, .nav-home-link, .color-options-menu{
+        transition: 0s color linear, 0s background-color linear;
     }
     
     details summary {
-        transition: 0s color linear;
-        transition: 0s background-color linear;
+        transition: 0s color linear, 0s background-color linear;
     }
 }
 
@@ -542,26 +520,3 @@ main .season-notes {
         font-size: 1.2em;
     }
 }
-
-/* small tablet styles */
-/* @media screen and (min-width: 620px) {
-    body {
-        font-size: 16px;
-    }
-} */
-
-
-/* large tablet & laptop styles */
-/* @media screen and (min-width: 960px) {
-    body {
-        font-size: 18px;
-    }
-} */
-
-
-/* desktop styles */
-/* @media screen and (mind-width: 1200px) {
-    body {
-        font-size: 20px;
-    }
-} */
