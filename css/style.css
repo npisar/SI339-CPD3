@@ -494,29 +494,27 @@ main .season-notes {
 ###############################################
 ############################################ */
 /* mobile styles */
-@media screen and (min-width: 200px) {
-    body {
-        font-size: 14px;
-    }
-    
-    table {
-        width: 100%;
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-    
-    th, td, li {
-        padding: 10px;
-        font-size: 0.9em;
-    }
+body {
+    font-size: 14px;
+}
 
-    .profile-picture {
-        width: 150px;
-        height: 150px;
-    }
+table {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
 
-    .profile-details p {
-        margin-top: 5px;
-        font-size: 1.2em;
-    }
+th, td, li {
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+}
+
+.profile-details p {
+    margin-top: 5px;
+    font-size: 1.2em;
 }
